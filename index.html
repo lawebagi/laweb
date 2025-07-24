@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Pages Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier's Terminal - New Vegas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <h1>Hello world!</h1>
-  <p>Welcome to my GitHub Pages site!</p>
+    <div class="pipboy-container">
+        <header class="pipboy-header">
+            <span class="pipboy-text-glow">PIP-BOY 3000A</span>
+            <span class="pipboy-time"></span> 
+        </header>
+
+        <nav class="pipboy-nav">
+            <a href="#stats" class="nav-item active">STATS</a>
+            <a href="#items" class="nav-item">ITEMS</a>
+            <a href="#data" class="nav-item">DATA</a>
+            <a href="#radio" class="nav-item">RADIO</a>
+        </nav>
+
+        <main class="pipboy-screen">
+            <section id="stats" class="pipboy-section active-section">
+                <h2>STATUS</h2>
+                <div class="stat-group">
+                    <p>HP: <span class="stat-value">100/100</span></p>
+                    <p>RADS: <span class="stat-value">0</span></p>
+                    <p>AP: <span class="stat-value">60/60</span></p>
+                </div>
+                <div class="stat-group">
+                    <p>LVL: <span class="stat-value">1</span></p>
+                    <p>XP: <span class="stat-value">0/100</span></p>
+                    <p>CAPS: <span class="stat-value">100</span></p>
+                </div>
+            </section>
+
+            <section id="items" class="pipboy-section">
+                <h2>INVENTORY</h2>
+                <ul>
+                    <li>Laser Pistol</li>
+                    <li>Stimpak (5)</li>
+                    <li>Nuka-Cola</li>
+                </ul>
+            </section>
+
+            <section id="data" class="pipboy-section">
+                <h2>DATA</h2>
+                <div class="data-tabs">
+                    <button class="data-tab-button active">Local Map</button>
+                    <button class="data-tab-button">World Map</button>
+                    <button class="data-tab-button">Quests</button>
+                    <button class="data-tab-button">Misc.</button>
+                </div>
+                <div class="data-content">
+                    <h3>Local Map</h3>
+                    <p>You are here: Goodsprings</p>
+                </div>
+            </section>
+
+            <section id="radio" class="pipboy-section">
+                <h2>RADIO</h2>
+                <p>Now Playing: No signal</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
